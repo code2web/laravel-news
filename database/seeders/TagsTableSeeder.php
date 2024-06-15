@@ -26,12 +26,12 @@ class TagsTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => null,
             ],
-            [
-                'name' => 'Php',         
-                // 'article_id' => Article::all()->random()->id,
-                'created_at' => new DateTime,
-                'updated_at' => null,
-            ],
+            // [
+            //     'name' => 'Php',         
+            //     // 'article_id' => Article::all()->random()->id,
+            //     'created_at' => new DateTime,
+            //     'updated_at' => null,
+            // ],
             // [
             //     'name' => 'js',         
             //     'article_id' => Article::all()->random()->id,

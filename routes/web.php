@@ -50,7 +50,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/pagination/article',[ArticleController::class,'pagination'])->name('pagination_article');
     Route::get('search/article',[ArticleController::class,'search'])->name('search_article');
     
-    Route::post('/update/{id}',[ArticleController::class,'updateNew']);
+    // Route::post('/update/{id}',[ArticleController::class,'updateNew']);
 
 });
 
@@ -251,3 +251,65 @@ Route::get('backup2',[ArticleController::class,'backup2'])->name('backup2');
 
 
 // ekbar bootboxjs bebohar kore take bad dite chaile hoy na tar chace theke jay and eta sara kaj hoy na
+
+// https://youtu.be/KIQhDpmbFDo?list=PLQDioScEMUhlIO3FLwmTsKCunfj6CK1Le
+// laravel bootstrap jquery ajax image crud
+
+// @method('PUT') na dile from submit hoe insert hoy Update howar bodole.
+
+
+
+
+// how-to-upload-image-using-ajax-in-laravel
+// https://webjourney.dev/laravel-10-ajax-image-upload-with-preview-image-webjourney
+// https://github.com/mberecall/Laravel-8-Ajax-CRUD-with-Image-Upload
+// https://www.youtube.com/watch?v=hx__ZkYQ-8s
+// https://dcodemania.com/post/crud-application-image-upload-laravel-8-ajax-sweetalert-datatable
+// https://www.youtube.com/watch?v=z8cCuWz_fYA
+// https://www.itsolutionstuff.com/post/laravel-9-ajax-image-upload-exampleexample.html
+// https://www.youtube.com/watch?v=Ipvsg9Q8UIE
+// https://github.com/tutsmake/Laravel-11-AJAX-CRUD-with-Image-Upload-Example
+// https://www.tutsmake.com/laravel-8-ajax-crud-with-image-upload-tutorial/
+// https://stackoverflow.com/questions/61721711/how-to-upload-image-using-ajax-in-laravel
+// https://www.youtube.com/watch?v=t6h94M4CclQ
+// https://youtu.be/cRx8mHhqGK8
+// https://laracasts.com/discuss/channels/general-discussion/how-to-update-image-with-ajax-in-laravel
+
+// https://www.banglanews24.com/lifestyle/news/bd/1348951.details
+// https://www.banglanews24.com/lifestyle/news/bd/1348585.details
+/*https://www.banglanews24.com/lifestyle/news/bd/1341118.details
+https://www.banglanews24.com/lifestyle/news/bd/1341112.details
+https://www.banglanews24.com/lifestyle/news/bd/1340875.details
+https://www.banglanews24.com/lifestyle/news/bd/1340557.details
+https://www.banglanews24.com/lifestyle/news/bd/1339303.details
+https://www.banglanews24.com/lifestyle/news/bd/1338451.details
+https://www.banglanews24.com/lifestyle/news/bd/1336339.details
+https://www.banglanews24.com/lifestyle/news/bd/1337659.details
+https://www.banglanews24.com/lifestyle/news/bd/1335406.details
+https://www.banglanews24.com/lifestyle/news/bd/1334155.details
+https://www.banglanews24.com/lifestyle/news/bd/1325299.details
+https://www.banglanews24.com/lifestyle/news/bd/1320508.details
+https://www.banglanews24.com/lifestyle/news/bd/1318582.details
+https://www.banglanews24.com/lifestyle/news/bd/1316308.details
+https://www.banglanews24.com/lifestyle/news/bd/1315369.details
+https://www.banglanews24.com/lifestyle/news/bd/1313944.details
+https://www.banglanews24.com/lifestyle/news/bd/1313638.details
+https://www.banglanews24.com/lifestyle/news/bd/1313083.details
+https://www.banglanews24.com/lifestyle/news/bd/1312729.details
+https://www.banglanews24.com/lifestyle/news/bd/1312468.details
+https://www.banglanews24.com/lifestyle/news/bd/1312015.details
+https://www.banglanews24.com/lifestyle/news/bd/1311439.details
+https://www.banglanews24.com/lifestyle/news/bd/1311028.details
+https://www.banglanews24.com/lifestyle/news/bd/903709.details
+https://www.banglanews24.com/lifestyle/news/bd/903301.details
+https://www.banglanews24.com/lifestyle/news/bd/1344487.details
+https://www.banglanews24.com/lifestyle/news/bd/1342642.details
+https://www.banglanews24.com/international/news/bd/1349083.details
+https://www.banglanews24.com/national/news/bd/1349056.details
+https://www.banglanews24.com/law-court/news/bd/1348984.details*/
+// select And ctr+shift+/ = multiline comment
+
+// 8.A.M  metro, Lift (2021), Tunnel, Rathnam, 
+
+/*how to clear laravel cache
+php artisan cache:clear*/

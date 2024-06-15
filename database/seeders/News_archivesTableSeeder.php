@@ -26,12 +26,12 @@ class News_archivesTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => null,
             ],
-            [
-                'date' => new DateTime,         
-                'article_id' => Article::all()->random()->id,
-                'created_at' => new DateTime,
-                'updated_at' => null,
-            ],
+            // [
+            //     'date' => new DateTime,         
+            //     'article_id' => Article::all()->random()->id,
+            //     'created_at' => new DateTime,
+            //     'updated_at' => null,
+            // ],
             // [
             //     'date' => new DateTime,         
             //     'article_id' => Article::all()->random()->id,

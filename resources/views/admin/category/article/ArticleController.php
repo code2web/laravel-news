@@ -116,29 +116,16 @@ class ArticleController extends Controller
      * Show the form for editing the specified resource.
      */
     // public function edit(Article $article)
-    // {
-    //     // $article = Article::all();
-    //     $categories = Category::all();
-    //     $districts = District::all();
-    //     return view('admin.article.update',['article','categories','districts']);
-    // }
-
-    // public function edit($id)
-    // {
-    //     $article = Article::where('id',$id)->get();
-    //     return view('admin.article.update',['article'=>$article]);
-    // }
+    public function edit($id)
+    {
+        $article = Article::where('id',$id)->get();
+        return view('admin.article.update',['article'=>$article]);
+    }
 
     // public function edit(Request $request, $id)
     // {
     //     $data['article'] = Article::find($id);
     //     return view('admin.article.update',$data);
-    // }
-
-    // public function edit($id)
-    // {
-    //     $articles = Article::all();
-    //     return view('admin.article.update',compact('articles'));
     // }
 
     /**
@@ -147,46 +134,46 @@ class ArticleController extends Controller
     // public function update(Request $request, Article $article)
     public function update(Request $request, $id)
     {
-        $request->validate(
-            [
-                'title'=>'required',
-                'content'=>'required',
-                // 'category_id'=>'required',
-            ],
-            [
-                'title.required'=> 'title is requierd',
-                'content.required'=> 'content is requierd',
-                // 'category_id.required'=> 'Category Selection is requierd',
-            ]
-        );
+        // $request->validate(
+        //     [
+        //         'title'=>'required',
+        //         'content'=>'required',
+        //         // 'category_id'=>'required',
+        //     ],
+        //     [
+        //         'title.required'=> 'title is requierd',
+        //         'content.required'=> 'content is requierd',
+        //         // 'category_id.required'=> 'Category Selection is requierd',
+        //     ]
+        // );
 
-        $article = Article::find($id);
-        if ($article) {
-            // $article->title = $request->input('title');
-            $article->title = $request->title;
-            // $article->content = $request->input('content');
-            $article->content = $request->content;
-            // if ($request->has('thumbnail')) {
-            if ($request->hasFile('thumbnail')) {
-                $path = 'storage/article/'.$article->thumbnail;
-                if (File::exist($path)) {
-                    File::delete($path);
-                }
-                $file = $request->file('thumbnail');
-                $extension = $file->getClientOriginalName();
-                $filename = time() . '.' .$extension;
-                $file->move('storage/article/', $filename);
-                $article->thumbnail = $filename;                
-            }
-            // $article->category_id = $request->input('category_id');
-            $article->category_id = $request->category_id;
-            // $article->district_id = $request->input('district_id');
-            $article->district_id = $request->district_id;
-            return response()->json([
-                'status' => 'success'
-            ]);
-        }
-            $article->save();
+        // $article = Article::find($id);
+        // if ($article) {
+        //     // $article->title = $request->input('title');
+        //     $article->title = $request->title;
+        //     // $article->content = $request->input('content');
+        //     $article->content = $request->content;
+        //     // if ($request->has('thumbnail')) {
+        //     if ($request->hasFile('thumbnail')) {
+        //         $path = 'storage/article/'.$article->thumbnail;
+        //         if (File::exist($path)) {
+        //             File::delete($path);
+        //         }
+        //         $file = $request->file('thumbnail');
+        //         $extension = $file->getClientOriginalName();
+        //         $filename = time() . '.' .$extension;
+        //         $file->move('storage/article/', $filename);
+        //         $article->thumbnail = $filename;                
+        //     }
+        //     // $article->category_id = $request->input('category_id');
+        //     $article->category_id = $request->category_id;
+        //     // $article->district_id = $request->input('district_id');
+        //     $article->district_id = $request->district_id;
+        //     return response()->json([
+        //         'status' => 'success'
+        //     ]);
+        // }
+        //     $article->save();
         
 
 

@@ -23,11 +23,11 @@ class DivisionsTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => null,
             ],
-            [
-                'name' => "Khulna",         
-                'created_at' => new DateTime,
-                'updated_at' => null,
-            ],
+            // [
+            //     'name' => "Khulna",         
+            //     'created_at' => new DateTime,
+            //     'updated_at' => null,
+            // ],
             // [
             //     'name' => "Rajshahi",         
             //     'created_at' => new DateTime,

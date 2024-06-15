@@ -32,17 +32,17 @@ class ArticlesTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => null,
             ],            
-            [
-                'title' => "WoMEN'S BETTER THAN SHOE & SKIRT",
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua consequat.',                
-                'thumbnail' => 'http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-better-than-naked-jacket-AVKL_NN4_hero.png',
-                'user_id' => 1,
-                'category_id' => Category::all()->random()->id,
-                'district_id' => District::all()->random()->id,
-                'created_at' => new DateTime,
-                'updated_at' => null,
-            ],            
+            // [
+            //     'title' => "WoMEN'S BETTER THAN SHOE & SKIRT",
+            //     'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            //     tempor incididunt ut labore et dolore magna aliqua consequat.',                
+            //     'thumbnail' => 'http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-better-than-naked-jacket-AVKL_NN4_hero.png',
+            //     'user_id' => 1,
+            //     'category_id' => Category::all()->random()->id,
+            //     'district_id' => District::all()->random()->id,
+            //     'created_at' => new DateTime,
+            //     'updated_at' => null,
+            // ],            
             // [
             //     'title' => "MEN'S BORN HISTORY",
             //     'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -26,12 +26,12 @@ class DistrictsTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => null,
             ],
-            [
-                'name' => "Changa",  
-                'division_id' => Division::all()->random()->id,
-                'created_at' => new DateTime,
-                'updated_at' => null,
-            ],
+            // [
+            //     'name' => "Changa",  
+            //     'division_id' => Division::all()->random()->id,
+            //     'created_at' => new DateTime,
+            //     'updated_at' => null,
+            // ],
             // [
             //     'name' => "Uttara",
             //     'division_id' => Division::all()->random()->id,

@@ -14,29 +14,29 @@ class FrontendController extends Controller
         // $recentPosts = Article::orderBy('id', 'DESC')->take(12)->get();
 
         // $nationals = Article::orderBy('created_at', 'DESC')->take(3)->get();
-        return view('home', compact(['articles','recentPosts']));
+        return view('web.home', compact(['articles','recentPosts']));
         // dd($categories)
     }    
 
     public function category(){
         
-        return view('category');
+        return view('web.category');
     }
 
     public function article($id){
         $article = Article::with('category', 'district')->where('id', $id)->first();
         
-        return view('article', compact('article'));
+        return view('web.article', compact('article'));
     }
 
     public function video(){
 
-        return view('video');
+        return view('web.video');
     }
 
     public function photo(){
         
-        return view('photo');
+        return view('web.photo');
     }
 }
 // where(['id' => '[0-9]+', 'name' => '[a-z]+']);

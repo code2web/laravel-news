@@ -28,7 +28,6 @@
             <label for="thumbnail">Thumbnail</label>            
             <div class="custom-file">
               {{-- <img src="{{asset('storage/article/'.$article->thumbnail)}}" class="thumbnail img-fluid img-preview" style="height: 100px; object-fit: contain;"> --}}
-              {{-- <img src="/storage/article/{{$article->thumbnail}}" class="thumbnail img-fluid img-preview" style="height: 100px; object-fit: contain;"> --}}
               {{-- <img src="{{ asset('img/logo.jpg') }}" alt=""> --}}
               {{-- <div>
                 @foreach ($articles as $article)

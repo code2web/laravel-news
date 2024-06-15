@@ -24,11 +24,11 @@ class CategoriesTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => null,
             ],
-            [
-                'name' => "Intertainment",  
-                'created_at' => new DateTime,
-                'updated_at' => null,
-            ],
+            // [
+            //     'name' => "Intertainment",  
+            //     'created_at' => new DateTime,
+            //     'updated_at' => null,
+            // ],
             // [
             //     'name' => "Life",
             //     'created_at' => new DateTime,
